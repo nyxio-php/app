@@ -13,13 +13,6 @@ return [
     'timezone' => env('APP_TIMEZONE', 'UTC'),
 
     /**
-     * Application directories
-     */
-    'path' => [
-        'public' => '/public',
-    ],
-
-    /**
      * Providers
      */
     'providers' => [
