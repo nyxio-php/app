@@ -21,9 +21,8 @@ class Hello
     {
         return $response->json(
             [
-                'my name' => 'NYX 🚀',
+                'my name' => 'nyxio 🚀',
                 'your code' => 'amazing',
-                'get' => $request->get(),
             ]
         );
     }
