@@ -90,12 +90,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nyxio-php/nyxio.git",
-                "reference": "56110c159b55e942c3fbf10f29adf82b6bc9f221"
+                "reference": "8f6acb0054c591b3f5e1f6b2efde0e52b890edb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/56110c159b55e942c3fbf10f29adf82b6bc9f221",
-                "reference": "56110c159b55e942c3fbf10f29adf82b6bc9f221",
+                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/8f6acb0054c591b3f5e1f6b2efde0e52b890edb1",
+                "reference": "8f6acb0054c591b3f5e1f6b2efde0e52b890edb1",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "issues": "https://github.com/nyxio-php/nyxio/issues",
                 "source": "https://github.com/nyxio-php/nyxio/tree/main"
             },
-            "time": "2022-01-13T09:22:25+00:00"
+            "time": "2022-01-19T11:47:33+00:00"
         },
         {
             "name": "php-http/message-factory",

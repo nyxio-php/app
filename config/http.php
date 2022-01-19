@@ -14,6 +14,6 @@ return [
      * Route groups
      */
     'groups' => [
-        new \Nyxio\Routing\Group('api', prefix: '/api'),
+        new \Nyxio\Routing\Group(name: 'api', prefix: '/api', parent: null),
     ],
 ];
