@@ -27,7 +27,7 @@ $worker = (new \Workerman\Worker(
     )
 ));
 
-$worker->count = $config->get('worker.workers');
+$worker->count = $config->get('worker.workers', 2);
 $worker->name = 'HTTP';
 
 $worker->onWorkerStart = static function (\Workerman\Worker $worker) use ($config) {
