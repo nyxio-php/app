@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "nyholm/psr7",
-            "version": "dev-master",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nyholm/psr7.git",
-                "reference": "28e9c474672d3474705227f6276b8f4d19297880"
+                "reference": "1461e07a0f2a975a52082ca3b769ca912b816226"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/28e9c474672d3474705227f6276b8f4d19297880",
-                "reference": "28e9c474672d3474705227f6276b8f4d19297880",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/1461e07a0f2a975a52082ca3b769ca912b816226",
+                "reference": "1461e07a0f2a975a52082ca3b769ca912b816226",
                 "shasum": ""
             },
             "require": {
@@ -36,7 +36,6 @@
                 "phpunit/phpunit": "^7.5 || 8.5 || 9.4",
                 "symfony/error-handler": "^4.4"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -70,7 +69,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Nyholm/psr7/issues",
-                "source": "https://github.com/Nyholm/psr7/tree/master"
+                "source": "https://github.com/Nyholm/psr7/tree/1.5.0"
             },
             "funding": [
                 {
@@ -82,7 +81,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-13T22:47:27+00:00"
+            "time": "2022-02-02T18:37:57+00:00"
         },
         {
             "name": "nyxio/nyxio",
@@ -90,22 +89,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nyxio-php/nyxio.git",
-                "reference": "2a053f2c436ad7ac8181f6ecd6220a4d9893e08f"
+                "reference": "9d58a8610b1f55ea7ed82dd87d120d9333ac8393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/2a053f2c436ad7ac8181f6ecd6220a4d9893e08f",
-                "reference": "2a053f2c436ad7ac8181f6ecd6220a4d9893e08f",
+                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/9d58a8610b1f55ea7ed82dd87d120d9333ac8393",
+                "reference": "9d58a8610b1f55ea7ed82dd87d120d9333ac8393",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
+                "ext-openswoole": "*",
                 "nyholm/psr7": "^1.4",
                 "php": ">=8.1",
                 "php-http/message-factory": "^1.0",
                 "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.0",
-                "workerman/workerman": "^4.0"
+                "psr/http-message": "^1.0"
             },
             "replace": {
                 "nyxio/config": "self.version",
@@ -137,16 +136,16 @@
                 ],
                 "psr-4": {
                     "Nyxio\\": "src/",
-                    "Nyxio\\Config\\": "src/Config/",
-                    "Nyxio\\Container\\": "src/Container/",
-                    "Nyxio\\Contract\\": "src/Contract/",
-                    "Nyxio\\Event\\": "src/Event/",
-                    "Nyxio\\Helper\\": "src/Helper/",
                     "Nyxio\\Http\\": "src/Http/",
+                    "Nyxio\\Event\\": "src/Event/",
+                    "Nyxio\\Config\\": "src/Config/",
+                    "Nyxio\\Helper\\": "src/Helper/",
                     "Nyxio\\Kernel\\": "src/Kernel/",
-                    "Nyxio\\Provider\\": "src/Provider/",
-                    "Nyxio\\Routing\\": "src/Routing/",
                     "Nyxio\\Server\\": "src/Server/",
+                    "Nyxio\\Routing\\": "src/Routing/",
+                    "Nyxio\\Contract\\": "src/Contract/",
+                    "Nyxio\\Provider\\": "src/Provider/",
+                    "Nyxio\\Container\\": "src/Container/",
                     "Nyxio\\Validation\\": "src/Validation/"
                 }
             },
@@ -165,7 +164,7 @@
                 "issues": "https://github.com/nyxio-php/nyxio/issues",
                 "source": "https://github.com/nyxio-php/nyxio/tree/main"
             },
-            "time": "2022-01-20T13:00:58+00:00"
+            "time": "2022-04-13T14:56:14+00:00"
         },
         {
             "name": "php-http/message-factory",
@@ -331,69 +330,6 @@
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
             "time": "2019-08-29T13:16:46+00:00"
-        },
-        {
-            "name": "workerman/workerman",
-            "version": "v4.0.26",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/walkor/workerman.git",
-                "reference": "27573e9f985f9ec0665b1f9924308d359bd0fdaa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/walkor/workerman/zipball/27573e9f985f9ec0665b1f9924308d359bd0fdaa",
-                "reference": "27573e9f985f9ec0665b1f9924308d359bd0fdaa",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "suggest": {
-                "ext-event": "For better performance. "
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Workerman\\": "./"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "walkor",
-                    "email": "walkor@workerman.net",
-                    "homepage": "http://www.workerman.net",
-                    "role": "Developer"
-                }
-            ],
-            "description": "An asynchronous event driven PHP framework for easily building fast, scalable network applications.",
-            "homepage": "http://www.workerman.net",
-            "keywords": [
-                "asynchronous",
-                "event-loop"
-            ],
-            "support": {
-                "email": "walkor@workerman.net",
-                "forum": "http://wenda.workerman.net/",
-                "issues": "https://github.com/walkor/workerman/issues",
-                "source": "https://github.com/walkor/workerman",
-                "wiki": "http://doc.workerman.net/"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/walkor",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://www.patreon.com/walkor",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2021-12-21T03:39:14+00:00"
         }
     ],
     "packages-dev": [],
@@ -408,5 +344,5 @@
         "php": ">=8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
