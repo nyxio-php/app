@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 $config = (new Nyxio\Config\Config())
     ->addConfig('dir', ['root' => __DIR__, 'config' => 'config'])
-    ->preloadConfigs(['app', 'http', 'worker']);
+    ->preloadConfigs(['app', 'http', 'server']);
 
 date_default_timezone_set($config->get('app.timezone', 'UTC'));
 
