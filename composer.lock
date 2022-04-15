@@ -89,12 +89,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nyxio-php/nyxio.git",
-                "reference": "b88175787a834645f089a723f60d035371c068c5"
+                "reference": "92e09c52bc4e7c972825e766589cd9d97a0b1179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/b88175787a834645f089a723f60d035371c068c5",
-                "reference": "b88175787a834645f089a723f60d035371c068c5",
+                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/92e09c52bc4e7c972825e766589cd9d97a0b1179",
+                "reference": "92e09c52bc4e7c972825e766589cd9d97a0b1179",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,6 @@
                 "nyxio/kernel": "self.version",
                 "nyxio/provider": "self.version",
                 "nyxio/routing": "self.version",
-                "nyxio/server": "self.version",
                 "nyxio/validation": "self.version"
             },
             "require-dev": {
@@ -141,7 +140,6 @@
                     "Nyxio\\Config\\": "src/Config/",
                     "Nyxio\\Helper\\": "src/Helper/",
                     "Nyxio\\Kernel\\": "src/Kernel/",
-                    "Nyxio\\Server\\": "src/Server/",
                     "Nyxio\\Routing\\": "src/Routing/",
                     "Nyxio\\Contract\\": "src/Contract/",
                     "Nyxio\\Provider\\": "src/Provider/",
@@ -164,7 +162,7 @@
                 "issues": "https://github.com/nyxio-php/nyxio/issues",
                 "source": "https://github.com/nyxio-php/nyxio/tree/main"
             },
-            "time": "2022-04-13T17:35:02+00:00"
+            "time": "2022-04-15T09:52:27+00:00"
         },
         {
             "name": "php-http/message-factory",
