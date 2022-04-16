@@ -7,5 +7,9 @@ $config->preload();
 
 date_default_timezone_set($config->get('app.timezone', 'UTC'));
 
-$application = (new Nyxio\Kernel\Application(config: $config))->bootstrap();
-$application->start();
+try {
+    $application = (new Nyxio\Kernel\Application(config: $config))->bootstrap();
+    $application->start();
+} catch (Throwable $exception) {
+    echo 'Error: ' . "\e[1m\033[31m" . $exception->getMessage() . "\033[0m" . \PHP_EOL;
+}
