@@ -24,5 +24,8 @@ return [
         'field_not_equal' => 'Field not equal :equal',
         'field_cannot_be_equal' => 'Field cannot be equal :equal',
         'field_does_not_match_expression' => 'Field does not match the expression',
+        'field_is_not_a_date' => 'Field does not match the date format',
+        'field_is_not_a_date_time' => 'Field does not match the date and time format',
+        'field_is_not_a_time' => 'Field does not match the time format',
     ],
 ];
