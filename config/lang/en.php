@@ -17,6 +17,9 @@ return [
         'field_length_shorter' => 'Field is shorter then :min',
         'field_value_smaller' => 'Field smaller then :min',
         'field_value_bigger' => 'Field bigger then :max',
+        'field_value_not_between' => 'Field value not between :from and :to',
         'field_value_not_in_enum' => 'Field value not allowed',
+        'field_not_equal' => 'Field not equal :equal',
+        'field_cannot_be_equal' => 'Field cannot be equal :equal',
     ],
 ];
