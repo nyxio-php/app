@@ -23,5 +23,6 @@ return [
         'field_value_excluded' => 'Field value excluded',
         'field_not_equal' => 'Field not equal :equal',
         'field_cannot_be_equal' => 'Field cannot be equal :equal',
+        'field_does_not_match_expression' => 'Field does not match the expression',
     ],
 ];
