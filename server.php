@@ -11,5 +11,5 @@ try {
     $application = (new Nyxio\Kernel\Application(config: $config))->bootstrap();
     $application->start();
 } catch (Throwable $exception) {
-    echo 'Error: ' . "\e[1m\033[31m" . $exception->getMessage() . "\033[0m" . \PHP_EOL;
+    echo 'Error: ' . "\e[1m\033[91m" . $exception->getMessage() . "\033[0m" . \PHP_EOL;
 }
