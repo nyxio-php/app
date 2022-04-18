@@ -9,7 +9,7 @@ return [
      * Application common
      */
     'env' => env('APP_ENV', 'local'),
-    'debug' => env('APP_DEBUG', true),
+    'debug' => env('APP_DEBUG', false),
     'timezone' => env('APP_TIMEZONE', 'UTC'),
     'lang' => env('APP_LANG', 'en'),
 
