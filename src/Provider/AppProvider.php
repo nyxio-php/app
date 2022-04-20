@@ -6,9 +6,7 @@ namespace App\Provider;
 
 use Nyxio\Contract\Event\EventDispatcherInterface;
 use Nyxio\Contract\Provider\ProviderInterface;
-use Nyxio\Kernel\Event\JobCompleted;
-use Nyxio\Kernel\Event\JobError;
-use Nyxio\Kernel\Event\ResponseEvent;
+use Nyxio\Kernel\Event;
 
 class AppProvider implements ProviderInterface
 {
@@ -23,7 +21,7 @@ class AppProvider implements ProviderInterface
 
     private function eventListeners(): void
     {
-        $this->eventDispatcher->addListener(JobError::NAME, static function (JobError $event) {
+        $this->eventDispatcher->addListener(Event\JobError::NAME, function (Event\JobError $event) {
             echo \sprintf(
                 "Job \e[1m\033[91m%s\033[0m throw exception: %s" . \PHP_EOL,
                 $event->job,
@@ -31,15 +29,24 @@ class AppProvider implements ProviderInterface
             );
         });
 
-        $this->eventDispatcher->addListener(JobCompleted::NAME, static function (JobCompleted $event) {
+        $this->eventDispatcher->addListener(Event\JobCompleted::NAME, function (Event\JobCompleted $event) {
             echo \sprintf(
                 "Job \e[1m\033[92m%s\033[0m completed" . \PHP_EOL,
                 $event->job,
             );
         });
 
-        $this->eventDispatcher->addListener(ResponseEvent::NAME, static function (ResponseEvent $event) {
-            // listener
+        $this->eventDispatcher->addListener(Event\CronJobError::NAME, function (Event\CronJobError $event) {
+            // handle
+        });
+
+        $this->eventDispatcher->addListener(Event\CronJobCompleted::NAME, function (Event\CronJobCompleted $event) {
+            // handle
+        }
+        );
+
+        $this->eventDispatcher->addListener(Event\ResponseEvent::NAME, function (Event\ResponseEvent $event) {
+            // handle
         });
     }
 }

@@ -7,6 +7,67 @@
     "content-hash": "0468cc02e303c772d44e863b48daf53a",
     "packages": [
         {
+            "name": "dragonmantank/cron-expression",
+            "version": "v3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dragonmantank/cron-expression.git",
+                "reference": "be85b3f05b46c39bbc0d95f6c071ddff669510fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/be85b3f05b46c39bbc0d95f6c071ddff669510fa",
+                "reference": "be85b3f05b46c39bbc0d95f6c071ddff669510fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0",
+                "webmozart/assert": "^1.0"
+            },
+            "replace": {
+                "mtdowling/cron-expression": "^1.0"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-webmozart-assert": "^1.0",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cron\\": "src/Cron/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Tankersley",
+                    "email": "chris@ctankersley.com",
+                    "homepage": "https://github.com/dragonmantank"
+                }
+            ],
+            "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
+            "keywords": [
+                "cron",
+                "schedule"
+            ],
+            "support": {
+                "issues": "https://github.com/dragonmantank/cron-expression/issues",
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/dragonmantank",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-18T15:43:28+00:00"
+        },
+        {
             "name": "nyholm/psr7",
             "version": "1.5.0",
             "source": {
@@ -85,19 +146,20 @@
         },
         {
             "name": "nyxio/nyxio",
-            "version": "v1.0.9",
+            "version": "v1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nyxio-php/nyxio.git",
-                "reference": "25934480c32d200c3b4bba9d7dcc565c5cb90063"
+                "reference": "c628ebba35e76ca242395d946f6f9d5de4c74d1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/25934480c32d200c3b4bba9d7dcc565c5cb90063",
-                "reference": "25934480c32d200c3b4bba9d7dcc565c5cb90063",
+                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/c628ebba35e76ca242395d946f6f9d5de4c74d1b",
+                "reference": "c628ebba35e76ca242395d946f6f9d5de4c74d1b",
                 "shasum": ""
             },
             "require": {
+                "dragonmantank/cron-expression": "^3.3",
                 "ext-mbstring": "*",
                 "ext-openswoole": "*",
                 "nyholm/psr7": "^1.4",
@@ -107,16 +169,16 @@
                 "psr/http-message": "^1.0"
             },
             "replace": {
-                "nyxio/config": "1.0.9",
-                "nyxio/container": "1.0.9",
-                "nyxio/contract": "1.0.9",
-                "nyxio/event": "1.0.9",
-                "nyxio/helper": "1.0.9",
-                "nyxio/http": "1.0.9",
-                "nyxio/kernel": "1.0.9",
-                "nyxio/provider": "1.0.9",
-                "nyxio/routing": "1.0.9",
-                "nyxio/validation": "1.0.9"
+                "nyxio/config": "1.0.11",
+                "nyxio/container": "1.0.11",
+                "nyxio/contract": "1.0.11",
+                "nyxio/event": "1.0.11",
+                "nyxio/helper": "1.0.11",
+                "nyxio/http": "1.0.11",
+                "nyxio/kernel": "1.0.11",
+                "nyxio/provider": "1.0.11",
+                "nyxio/routing": "1.0.11",
+                "nyxio/validation": "1.0.11"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.5",
@@ -159,9 +221,9 @@
             "description": "nyxio framework",
             "support": {
                 "issues": "https://github.com/nyxio-php/nyxio/issues",
-                "source": "https://github.com/nyxio-php/nyxio/tree/v1.0.9"
+                "source": "https://github.com/nyxio-php/nyxio/tree/v1.0.11"
             },
-            "time": "2022-04-20T13:05:50+00:00"
+            "time": "2022-04-20T19:39:41+00:00"
         },
         {
             "name": "php-http/message-factory",
@@ -327,6 +389,65 @@
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
             "time": "2019-08-29T13:16:46+00:00"
+        },
+        {
+            "name": "webmozart/assert",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "dc96b6775d038bfa31a240150ad8505bfb856c2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/dc96b6775d038bfa31a240150ad8505bfb856c2d",
+                "reference": "dc96b6775d038bfa31a240150ad8505bfb856c2d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<4.6.1 || 4.6.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.13"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/master"
+            },
+            "time": "2022-04-18T06:42:29+00:00"
         }
     ],
     "packages-dev": [],
