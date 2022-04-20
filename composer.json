@@ -3,6 +3,7 @@
     "description": "nyxio application",
     "type": "project",
     "minimum-stability": "dev",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
