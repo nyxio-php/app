@@ -6,7 +6,7 @@ use function Nyxio\Helper\Env\env;
 
 return [
     /**
-     * Application common
+     * Application settings
      */
     'env' => env('APP_ENV', 'local'),
     'debug' => env('APP_DEBUG', false),
