@@ -7,7 +7,7 @@ return [
      * Allowed actions
      */
     'actions' => [
-        Action\Hello::class,
+        Action\Home::class,
     ],
 
     /**

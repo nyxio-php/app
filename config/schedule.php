@@ -2,7 +2,7 @@
 
 return [
     /**
-     * Cron Jobs
+     * Scheduled Jobs
      */
     'jobs' => [
 

@@ -16,36 +16,62 @@ class AppProvider implements ProviderInterface
 
     public function process(): void
     {
-        $this->eventListeners();
+        $this->kernelEventListeners();
     }
 
-    private function eventListeners(): void
+    private function kernelEventListeners(): void
     {
-        $this->eventDispatcher->addListener(Event\JobError::NAME, function (Event\JobError $event) {
-            echo \sprintf(
-                "Job \e[1m\033[91m%s\033[0m throw exception: %s" . \PHP_EOL,
-                $event->job,
-                $event->exception->getMessage()
-            );
-        });
-
-        $this->eventDispatcher->addListener(Event\JobCompleted::NAME, function (Event\JobCompleted $event) {
-            echo \sprintf(
-                "Job \e[1m\033[92m%s\033[0m completed" . \PHP_EOL,
-                $event->job,
-            );
-        });
-
-        $this->eventDispatcher->addListener(Event\CronJobError::NAME, function (Event\CronJobError $event) {
-            // handle
-        });
-
-        $this->eventDispatcher->addListener(Event\CronJobCompleted::NAME, function (Event\CronJobCompleted $event) {
-            // handle
-        }
+        $this->eventDispatcher->addListener(
+            Event\QueueException::NAME,
+            static function (Event\QueueException $event) {
+                echo \sprintf(
+                    "[%s] Queue job \e[1m\033[91m%s\033[0m (%s) throw exception: %s" . \PHP_EOL,
+                    (new \DateTime())->format('Y-m-d H:i:s'),
+                    $event->taskData->job,
+                    $event->taskData->uuid,
+                    $event->exception->getMessage()
+                );
+            }
         );
 
-        $this->eventDispatcher->addListener(Event\ResponseEvent::NAME, function (Event\ResponseEvent $event) {
+        $this->eventDispatcher->addListener(
+            Event\QueueComplete::NAME,
+            static function (Event\QueueComplete $event) {
+                echo \sprintf(
+                    "[%s] Queue job \e[1m\033[92m%s\033[0m (%s) completed" . \PHP_EOL,
+                    (new \DateTime())->format('Y-m-d H:i:s'),
+                    $event->taskData->job,
+                    $event->taskData->uuid,
+                );
+            }
+        );
+
+        $this->eventDispatcher->addListener(
+            Event\ScheduleException::NAME,
+            static function (Event\ScheduleException $event) {
+                // handle
+                echo \sprintf(
+                    "[%s] Schedule job \e[1m\033[91m%s\033[0m throw exception at %s: %s" . \PHP_EOL,
+                    (new \DateTime())->format('Y-m-d H:i:s'),
+                    $event->taskData->job,
+                    $event->exception->getMessage(),
+                );
+            }
+        );
+
+        $this->eventDispatcher->addListener(
+            Event\ScheduleComplete::NAME,
+            static function (Event\ScheduleComplete $event) {
+                // handle
+                echo \sprintf(
+                    "[%s] Schedule job \e[1m\033[92m%s\033[0m completed" . \PHP_EOL,
+                    (new \DateTime())->format('Y-m-d H:i:s'),
+                    $event->taskData->job,
+                );
+            }
+        );
+
+        $this->eventDispatcher->addListener(Event\ResponseEvent::NAME, static function (Event\ResponseEvent $event) {
             // handle
         });
     }

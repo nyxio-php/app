@@ -12,10 +12,10 @@ use Psr\Http\Message\ResponseInterface;
 
 #[Route(
     method: Method::GET,
-    uri: '/hello',
+    uri: '/',
 )]
 #[RouteGroup(name: 'api')]
-class Hello
+class Home
 {
     public function handle(Http\Request $request, Http\Response $response): ResponseInterface
     {
