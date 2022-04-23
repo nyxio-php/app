@@ -206,23 +206,23 @@
         },
         {
             "name": "nyxio/nyxio",
-            "version": "v1.2",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nyxio-php/nyxio.git",
-                "reference": "e0f141f0061e87d03953ed7176f438058eb45c54"
+                "reference": "fb9cd7ce0530dab27a8e9f7dda1788e4a375de6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/e0f141f0061e87d03953ed7176f438058eb45c54",
-                "reference": "e0f141f0061e87d03953ed7176f438058eb45c54",
+                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/fb9cd7ce0530dab27a8e9f7dda1788e4a375de6a",
+                "reference": "fb9cd7ce0530dab27a8e9f7dda1788e4a375de6a",
                 "shasum": ""
             },
             "require": {
                 "dragonmantank/cron-expression": "^3.3",
                 "ext-mbstring": "*",
                 "ext-openswoole": "*",
-                "nyholm/psr7": "^1.4",
+                "nyholm/psr7": "^1.5",
                 "php": ">=8.1",
                 "php-http/message-factory": "^1.0",
                 "psr/http-factory": "^1.0",
@@ -230,16 +230,16 @@
                 "ramsey/uuid": "^4.3"
             },
             "replace": {
-                "nyxio/config": "1.2.0",
-                "nyxio/container": "1.2.0",
-                "nyxio/contract": "1.2.0",
-                "nyxio/event": "1.2.0",
-                "nyxio/helper": "1.2.0",
-                "nyxio/http": "1.2.0",
-                "nyxio/kernel": "1.2.0",
-                "nyxio/provider": "1.2.0",
-                "nyxio/routing": "1.2.0",
-                "nyxio/validation": "1.2.0"
+                "nyxio/config": "1.2.2",
+                "nyxio/container": "1.2.2",
+                "nyxio/contract": "1.2.2",
+                "nyxio/event": "1.2.2",
+                "nyxio/helper": "1.2.2",
+                "nyxio/http": "1.2.2",
+                "nyxio/kernel": "1.2.2",
+                "nyxio/provider": "1.2.2",
+                "nyxio/routing": "1.2.2",
+                "nyxio/validation": "1.2.2"
             },
             "require-dev": {
                 "openswoole/ide-helper": "@dev",
@@ -292,9 +292,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nyxio-php/nyxio/issues",
-                "source": "https://github.com/nyxio-php/nyxio/tree/v1.2"
+                "source": "https://github.com/nyxio-php/nyxio/tree/v1.2.2"
             },
-            "time": "2022-04-22T18:40:05+00:00"
+            "time": "2022-04-23T10:09:54+00:00"
         },
         {
             "name": "php-http/message-factory",

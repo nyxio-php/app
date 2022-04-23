@@ -51,7 +51,7 @@ class AppProvider implements ProviderInterface
             static function (Event\ScheduleException $event) {
                 // handle
                 echo \sprintf(
-                    "[%s] Schedule job \e[1m\033[91m%s\033[0m throw exception at %s: %s" . \PHP_EOL,
+                    "[%s] Scheduled job \e[1m\033[91m%s\033[0m throw exception at %s: %s" . \PHP_EOL,
                     (new \DateTime())->format('Y-m-d H:i:s'),
                     $event->taskData->job,
                     $event->exception->getMessage(),
@@ -64,7 +64,7 @@ class AppProvider implements ProviderInterface
             static function (Event\ScheduleComplete $event) {
                 // handle
                 echo \sprintf(
-                    "[%s] Schedule job \e[1m\033[92m%s\033[0m completed" . \PHP_EOL,
+                    "[%s] Scheduled job \e[1m\033[92m%s\033[0m completed" . \PHP_EOL,
                     (new \DateTime())->format('Y-m-d H:i:s'),
                     $event->taskData->job,
                 );
