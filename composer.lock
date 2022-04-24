@@ -206,16 +206,16 @@
         },
         {
             "name": "nyxio/nyxio",
-            "version": "v1.3",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nyxio-php/nyxio.git",
-                "reference": "4f0ad60c80e8b7e2557ef4e67e82dc0e482d7434"
+                "reference": "f8f8b00a187fb04aa7565fa6dc0fbbb715a7cf49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/4f0ad60c80e8b7e2557ef4e67e82dc0e482d7434",
-                "reference": "4f0ad60c80e8b7e2557ef4e67e82dc0e482d7434",
+                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/f8f8b00a187fb04aa7565fa6dc0fbbb715a7cf49",
+                "reference": "f8f8b00a187fb04aa7565fa6dc0fbbb715a7cf49",
                 "shasum": ""
             },
             "require": {
@@ -230,16 +230,16 @@
                 "ramsey/uuid": "^4.3"
             },
             "replace": {
-                "nyxio/config": "1.3.0",
-                "nyxio/container": "1.3.0",
-                "nyxio/contract": "1.3.0",
-                "nyxio/event": "1.3.0",
-                "nyxio/helper": "1.3.0",
-                "nyxio/http": "1.3.0",
-                "nyxio/kernel": "1.3.0",
-                "nyxio/provider": "1.3.0",
-                "nyxio/routing": "1.3.0",
-                "nyxio/validation": "1.3.0"
+                "nyxio/config": "1.3.1",
+                "nyxio/container": "1.3.1",
+                "nyxio/contract": "1.3.1",
+                "nyxio/event": "1.3.1",
+                "nyxio/helper": "1.3.1",
+                "nyxio/http": "1.3.1",
+                "nyxio/kernel": "1.3.1",
+                "nyxio/provider": "1.3.1",
+                "nyxio/routing": "1.3.1",
+                "nyxio/validation": "1.3.1"
             },
             "require-dev": {
                 "mockery/mockery": "^1.5",
@@ -293,9 +293,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nyxio-php/nyxio/issues",
-                "source": "https://github.com/nyxio-php/nyxio/tree/v1.3"
+                "source": "https://github.com/nyxio-php/nyxio/tree/v1.3.1"
             },
-            "time": "2022-04-24T17:24:05+00:00"
+            "time": "2022-04-24T22:03:40+00:00"
         },
         {
             "name": "php-http/message-factory",
