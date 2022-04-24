@@ -18,7 +18,6 @@ return [
      */
     'providers' => [
         Kernel\Provider\KernelProvider::class,
-        Kernel\Provider\ServerProvider::class,
 
         App\Provider\AppProvider::class,
     ],

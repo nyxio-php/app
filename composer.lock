@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39ae8ca057df93f2d0c4ed8ef2dbbcfd",
+    "content-hash": "9db0cd65fe7bd24048dbf1797a1eaed8",
     "packages": [
         {
             "name": "brick/math",
@@ -206,16 +206,16 @@
         },
         {
             "name": "nyxio/nyxio",
-            "version": "v1.2.2",
+            "version": "v1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nyxio-php/nyxio.git",
-                "reference": "fb9cd7ce0530dab27a8e9f7dda1788e4a375de6a"
+                "reference": "4f0ad60c80e8b7e2557ef4e67e82dc0e482d7434"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/fb9cd7ce0530dab27a8e9f7dda1788e4a375de6a",
-                "reference": "fb9cd7ce0530dab27a8e9f7dda1788e4a375de6a",
+                "url": "https://api.github.com/repos/nyxio-php/nyxio/zipball/4f0ad60c80e8b7e2557ef4e67e82dc0e482d7434",
+                "reference": "4f0ad60c80e8b7e2557ef4e67e82dc0e482d7434",
                 "shasum": ""
             },
             "require": {
@@ -230,24 +230,25 @@
                 "ramsey/uuid": "^4.3"
             },
             "replace": {
-                "nyxio/config": "1.2.2",
-                "nyxio/container": "1.2.2",
-                "nyxio/contract": "1.2.2",
-                "nyxio/event": "1.2.2",
-                "nyxio/helper": "1.2.2",
-                "nyxio/http": "1.2.2",
-                "nyxio/kernel": "1.2.2",
-                "nyxio/provider": "1.2.2",
-                "nyxio/routing": "1.2.2",
-                "nyxio/validation": "1.2.2"
+                "nyxio/config": "1.3.0",
+                "nyxio/container": "1.3.0",
+                "nyxio/contract": "1.3.0",
+                "nyxio/event": "1.3.0",
+                "nyxio/helper": "1.3.0",
+                "nyxio/http": "1.3.0",
+                "nyxio/kernel": "1.3.0",
+                "nyxio/provider": "1.3.0",
+                "nyxio/routing": "1.3.0",
+                "nyxio/validation": "1.3.0"
             },
             "require-dev": {
+                "mockery/mockery": "^1.5",
                 "openswoole/ide-helper": "@dev",
                 "phpstan/phpstan": "1.6.x-dev",
                 "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "4.0.x-dev",
-                "symplify/monorepo-builder": "^10.0",
-                "vimeo/psalm": "^4.16"
+                "symplify/monorepo-builder": "^10.2",
+                "vimeo/psalm": "5.x-dev"
             },
             "type": "library",
             "autoload": {
@@ -292,9 +293,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nyxio-php/nyxio/issues",
-                "source": "https://github.com/nyxio-php/nyxio/tree/v1.2.2"
+                "source": "https://github.com/nyxio-php/nyxio/tree/v1.3"
             },
-            "time": "2022-04-23T10:09:54+00:00"
+            "time": "2022-04-24T17:24:05+00:00"
         },
         {
             "name": "php-http/message-factory",
